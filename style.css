@@ -1,0 +1,44 @@
+*{
+	background-color: black;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.wrapper{
+	margin: 0;
+	padding:0;
+	width: 900px
+
+}
+
+.header{
+	color:white;
+	padding-left: 20px;
+	padding-top: 3px;
+}
+
+h1{
+	font-size: 40px;
+	padding-bottom: 5px;
+}
+
+ul{
+	list-style-type: none;
+ 	margin: 0;
+    padding: 0;
+}
+
+ul li{
+	display: inline;
+
+}
+
+ul li a{
+	text-decoration: none;
+	color: white
+
+}
+
+a:hover {
+	background-color: white
+	color:black;
+}
