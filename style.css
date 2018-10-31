@@ -1,44 +1,42 @@
 *{
-	background-color: black;
-	font-family: "Lucida Console", Monaco, monospace;
+ background-color: black;
+ font-family: avenir;
+ color: lightyellow
+
 }
 
 .wrapper{
-	margin: 0;
-	padding:0;
-	width: 900px
-
+  max-width: 800px;
+  margin:50px;
+  align-items: center;
 }
 
-.header{
-	color:white;
-	padding-left: 20px;
-	padding-top: 3px;
-}
+  h1{
+      font-size: 60px;
+      padding-bottom: none;
+      display: inline-block;
+      margin:0;
+  }
 
-h1{
-	font-size: 40px;
-	padding-bottom: 5px;
-}
 
-ul{
-	list-style-type: none;
- 	margin: 0;
-    padding: 0;
-}
+  h1 p{
+    padding:none;
+  }
+      ul{
+        padding-inline-start:0;
+        margin-block-start:0;
+        text-indent: 0;
 
-ul li{
-	display: inline;
 
-}
+      }
+      li{
+        display: inline;
+        padding: 10px;
+        float: left;
+      }
 
-ul li a{
-	text-decoration: none;
-	color: white
 
-}
-
-a:hover {
-	background-color: white
-	color:black;
-}
+      li a{
+        text-decoration: none;
+        color: lightyellow
+      }
