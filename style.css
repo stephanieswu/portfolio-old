@@ -1,88 +1,50 @@
 *{
- background-color: #202020;
- font-family: avenir;
- color: lightyellow
+ background-color:#F0F0F0;
+ font-family: 'Libre Baskerville', serif;
+ color:#404040;
 
 }
 
 .wrapper{
-  max-width: 900px;
-  margin:50px;
-  align-items: center;
+  max-width: 950px;
+  margin:0,auto;
 }
+a:hover{
+  background: yellow;
+  text-decoration:none;
 
-  h1{
-      font-size: 60px;
-      padding-bottom: none;
-      display:block;
-      margin:0;
-      width: 600px;
-    /*animation-duration: 3s;
-      animation-name: slidein;
-      animation-direction: alternate;
-      animation-iteration-count: 2;
-  }
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }*/
-  }
-
-  h1 p{
-    padding:none;
-  }
-      ul{
-        padding-inline-start:0;
-        margin-block-start:0;
-        text-indent: 0;
-
-
-      }
-      li{
-        display: inline;
-        padding: 10px;
-        float: left;
-      }
-      li a{
-        color: lightyellow;
-      }
-
-      li button{
-        text-decoration: none;
-        color: lightyellow;
-        font-size: 15px;
-      }
-
-      li p{
-        padding: 8px;
-        background-color:	#404040;
-        animation-name: drop;
-        animation-duration: 1s;
-
-      }
-        @keyframes drop {
-          from{
-            margin-top:2%
-          }
-          to{
-            margin-bottom:0;
-          }
-        }
-
-img{
-  max-width: 600px;
-  width: 100%;
-  align-content: center;
 }
 
 
-.work ul{
+.header{
+  padding-left: 20px;
+  max-width: px;
+}
+
+
+
+ul{
+  padding: 20px;
+
+}
+li{
+  list-style: none;
+  padding: 5px;
   font-size: 20px;
-  display: inline
+}
+
+.fa{
+  margin-top: 20px;
+  padding-left: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+#introPic{
+  float:right;
+  display: inline-flex;
+  width: 80%;
+
+
+
 }
