@@ -1,12 +1,12 @@
 *{
- background-color:#F0F0F0;
+ background-color:white;
  font-family: 'Libre Baskerville', serif;
  color:#404040;
 
 }
 
 .wrapper{
-  max-width: 950px;
+  max-width: 850px;
   margin:0,auto;
 }
 a:hover{
@@ -15,6 +15,17 @@ a:hover{
 
 }
 
+.illustrationSub li{
+  display: none;
+}
+
+.illustration:hover .illustrationSub li{
+  display: block;
+}
+
+h1:hover{
+  background-color:yellow;
+}
 
 .header{
   padding-left: 20px;
@@ -25,12 +36,20 @@ a:hover{
 
 ul{
   padding: 20px;
-
 }
 li{
   list-style: none;
   padding: 5px;
   font-size: 20px;
+}
+.illustrationSub{
+  display:none;
+}
+.illustrationSub li{
+  font-size:15px;
+  padding: 3px;
+
+
 }
 
 .fa{
@@ -43,8 +62,6 @@ li{
 #introPic{
   float:right;
   display: inline-flex;
-  width: 80%;
-
-
+  height: 500px;
 
 }
