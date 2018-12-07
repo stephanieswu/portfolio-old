@@ -1,7 +1,9 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 *{
  font-family:'Roboto', sans-serif;
  color:#581845;
-
+cursor: crosshair;
 }
 body{
   background: rgb(236,210,21);
@@ -32,7 +34,9 @@ nav{
 }
 .footer{
   font-size: 15px;
-  margin-top: 100px;
+  margin-top: 50px;
+  display: inline-flex;
+  text-align: left;
 }
 
 .opening-image{
@@ -44,6 +48,24 @@ nav{
 .self2{
   height:60%;
 }
+.social-icons{
+  display: inline-flex;
+  list-style: none;
+  margin: 10px;
+  text-align: left;
+}
+ .fa{
+  color: inherit;
+  list-style: none;
+  margin: 0 10px;
+}
+
+
+
+
+
+
+
 .aboutBox{
   background-color:#404040;
   display:none;
@@ -74,8 +96,8 @@ button:hover{
   background-color: yellow;
 }
 a:hover{
-  background: #DAF7A6;
-  text-decoration:none;
+  background:#F48FB1;
+  cursor: pointer;
 
 }
 .profile{
@@ -86,7 +108,7 @@ a:hover{
   border: 1px white;
 }
 ul{
-  display: inline block;
+  display: inline;
 }
 
 .illustration{
