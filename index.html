@@ -7,47 +7,35 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto+Slab" rel="stylesheet">
     <title>Stephanie Wu</title>
   </head>
-  <body class="body">
+  <body>
+   <div class='wrapper'>
 
-
-    <div class="wrapper">
-      <div class="header">
-        <h1>Nice to meet you. I'm <em>Stephanie.</em><br>
-             Currently a student at <a href="https://www.risd.edu/" target="blank">RISD</a> majoring in <a href="https://www.risd.edu/academics/illustration/" target="blank">Illustration</a>
-             interested in making interdisciplinary work that makes you think.</h1>
-      </div>
-        <nav>
-          <img src="art/sleep2.png" alt="" id="introPic" >
-          <ul>
-            <li><a href="about.html" id="about">about</a></li>
-            <li><a href="#"class="illustration" >illustration</a>
-                  <ul class="illustrationSub">
-                    <li><a href="" id="">editorial</a></li>
-                    <li><a href="" id="">animation</a></li>
-                    <li><a href="" id="">comic</a></li>
-                    <li><a href="" id="">personal</a></li>
-                    <li><a href="" id="">sketchbook</a></li>
-                  </ul>
-            </li>
-
-            <li><a href="" id="code">code</a></li>
-            <a href="https://www.instagram.com/mastuwu/" class="fa fa-instagram"></a>
-            <a href="https://www.linkedin.com/in/stephanie-wu-16b261140/" class="fa fa-linkedin"></a>
-          </ul>
-
-        </nav>
-    </div>
-    <!--</div>
-      <div class="portfolio">
-        <img class="art"src="art/postcover_halloween.jpg" alt="">
-        <img class="art"src="art/sunandmood.jpg" alt="">
-        <img class="art"src="art/sleep1.jpg" alt="">
-        <img class="art"src="art/" alt="">
-        <img class="art"src="art/" alt="">
-        <img class="art"src="art/" alt="">
-
-      </div>-->
-
-    <script src="script.js"></script>
+       <div class="header">
+           <h1><a href="index.html">Stephanie Wu</a></h1>
+       </div>
+       <nav>
+         <ul>
+            <button type="button" name="button" class="about" onclick="openAbout()">about</button>
+                <div class="aboutBox">
+                    <img src="art/profile.jpg" alt="" class="profile">
+                    <p class="aboutText">Stephanie Wu is currently pursuing a BFA in Illustration at Rhode Island School of Design.
+                      <br>She is interested in making interdisciplinary work that make you think. She enjoys trying new things like <a href=""> coding</a>,
+                </div>
+            <button type="button" name="button"> illustration</button>
+            <button type="button" name="button">contact</button>
+         </ul>
+       </nav>
+           <div class="illustration">
+               <img src="art/postcover_halloween.jpg" alt="" class="illustration ">
+               <img src="art/sleep1.jpg" alt="" class="illustration ">
+               <img src="art/" alt="" class="illustration ">
+               <img src="art/" alt="" class="illustration ">
+               <img src="art/" alt="" class="illustration ">
+               <img src="art/" alt="" class="illustration ">
+               <img src="art/" alt="" class="illustration ">
+               <img src="art/" alt="" class="illustration ">
+               <img src="art/" alt="" class="illustration ">
+           </div>
+   </div>
+   <script src="script.js"></script>
   </body>
-</html>

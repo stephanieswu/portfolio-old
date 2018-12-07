@@ -9,68 +9,54 @@
   max-width: 850px;
   margin:0,auto;
 }
+.header{
+  margin-left: 40px;
+}
+.aboutBox{
+  background-color:#404040;
+  display:none;
+  border:1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  height: 300px;
+  animation: aboutBox .7s
+}
+@keyframes aboutBox {
+  50%{transform:translateY(10px);
+  }
+
+}
+.aboutText{
+  background-color:#404040;
+  color: white;
+}
+
+button{
+  margin: 10px;
+  font-size: 15px;
+  background-color:Gainsboro;
+  border-radius: 5px
+}
+button:hover{
+  cursor:pointer;
+  background-color: yellow;
+}
 a:hover{
   background: yellow;
   text-decoration:none;
 
 }
-
-.illustrationSub li{
-  display: none;
+.profile{
+  float:left;
+  display: inline-block;
+  height: 250px;
+  margin: 20px;
+  border: 1px white;
 }
-
-.illustration:hover .illustrationSub li{
-  display: block;
-}
-
-h1:hover{
-  background-color:yellow;
-}
-
-.header{
-  padding-left: 20px;
-  max-width: px;
-}
-
-
-
 ul{
-  padding: 20px;
-}
-li{
-  list-style: none;
-  padding: 5px;
-  font-size: 20px;
-}
-.illustrationSub{
-  display:none;
-}
-.illustrationSub li{
-  font-size:15px;
-  padding: 3px;
-
-
+  display: inline block;
 }
 
-.fa{
-  margin-top: 20px;
-  padding-left: 10px;
-  text-decoration: none;
-  color: inherit;
-}
-
-#introPic{
-  float:right;
-  display: inline-flex;
-  height: 500px;
-
-}
-
-nav{
-  position: relative;
-}
-
-.info{
-  float:right;
-
+.illustration{
+  display: none;
 }
