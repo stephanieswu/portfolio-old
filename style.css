@@ -37,7 +37,7 @@ nav{
 
 .opening-image{
   float: right;
-
+  max-width: 600px;
   overflow: hidden;
 
 }
