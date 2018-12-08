@@ -1,7 +1,19 @@
-.editorial-content{
+.content{
   float: right;
-  margin: 50px;
-  max-width: 500px;
-
+  margin-right: 80px;
+  margin-left: 20px;
+  max-width: 800px;
+  text-align: center;
   height: auto;
+  overflow: hidden;
+}
+
+.screenshot{
+  height: 400px;
+  width: 650px
+}
+
+.editorial{
+  width:75%
+
 }
