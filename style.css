@@ -62,34 +62,11 @@ nav{
 }
 
 
-
-
-
-
-
-.aboutBox{
-  background-color:#404040;
-  display:none;
-  border:1px solid;
-  border-radius: 5px;
-  padding: 10px;
-  height: 300px;
-  animation: aboutBox .7s
-}
-@keyframes aboutBox {
-  50%{transform:translateY(10px);
-  }
-
-}
-.aboutText{
-  background-color:#404040;
-  color: white;
-}
-
 button{
-  margin: 10px;
+  margin-left:40px;
+  margin-bottom: 20px;
   font-size: 15px;
-  background-color:Gainsboro;
+  background-color:lightyellow;
   border-radius: 5px
 }
 button:hover{
@@ -110,8 +87,4 @@ a:hover{
 }
 ul{
   display: inline;
-}
-
-.illustration{
-  display: none;
 }
