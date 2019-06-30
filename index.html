@@ -2,79 +2,77 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.clo.udflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto+Slab" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/responsive-grid.css">
+    <link rel="stylesheet" href="css/slimmenu.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Stephanie Wu</title>
   </head>
   <body>
-    <div class="opening-image">
-      <img src="art/self2.png" alt="" class="self2">
-    </div>
-   <div class='wrapper'>
-     <div class="header">
-       <h1><a href="index.html" class="header">Stephanie Wu  </a></h1>
-     </div>
-     <div class="info">
+  <div class="wrapper">
 
-       <p>
-           Illustrator/visual communicator from Boston, MA but is currently in Providence, RI attending <br><a href="https://www.risd.edu/">Rhode Island School of Design </a>
-       </p>
 
-       <nav class="nav">
-        <p class="work"><strong></strong></p>
-         <ol>
+      <header>
+          <div class="section group">
+              <div class="col span_12_of_12">
+                  <ul>
+                    <li><a href="info.html">info</a></li>
+                    <li ><a href="#">illustration</a></li>
+                    <li ><a href="#">design</a></li>
+                    <li ><a href="#">animation</a></li>
+                  </ul>
+              </div> <!--end of nav-->
 
-          <li><a href="">visual thinking</a></li>
-          <li><a href="editorial.html">editorial</a></li>
-          <li><a href="websites.html">websites</a></li>
-          <li><a href="pattern.html">pattern</a></li>
-          <li><a href="">personal</a></li>
-          <li><a href="">sketchbook</a></li>
-          <li><a href="resume.pdf" target="_blank">resume</a></li>
-          </ol>
-       </nav>
-       <div class="end">
-  <button type="button" name="button" onclick="">let's work together </button>
-           <div class="social-media">
-               <ul class="social-icons">
-                   <li><a href="https://www.linkedin.com/in/stephanie-wu-16b261140/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                   <li><a href="https://www.instagram.com/mastuwu/"><i class="fa fa-instagram" target="_blank"></i></a></li>
-                   <li><a href="https://www.behance.net/swu072dd9"><i class="fa fa-behance" target="_blank"></i></a></li>
-               </ul>
-           </div>
-         <p class="footer">© stephanie wu 2018</p>
-       </div>
-     </div>
-   </div>
+              <div class="bigtitle">
+                  <div class="col span_12_of_12 ">
+                      <h1>Stephanie Wu is an illustrator and designer studying at Rhode Island School of Design</h1>
+                  </div>
+              </div><!--end of bigtitle-->
+          </div><!--end of header-->
+    </header>
 
-       <!--<div class="header">
-           <h1><a href="index.html">Stephanie Wu</a></h1>
-       </div>
-       <nav>
-         <ul>
-            <button type="button" name="button" class="about" onclick="openAbout()">about</button>
-                <div class="aboutBox">
-                    <img src="art/profile.jpg" alt="" class="profile">
-                    <p class="aboutText">Stephanie Wu is currently pursuing a BFA in Illustration at Rhode Island School of Design.
-                      <br>She is interested in making interdisciplinary work that make you think. She enjoys trying new things like <a href=""> coding</a>,
-                </div>
-            <button type="button" name="button"> illustration</button>
-            <button type="button" name="button">contact</button>
-         </ul>
-       </nav>
-           <div class="illustration">
-               <img src="art/postcover_halloween.jpg" alt="" class="illustration ">
-               <img src="art/sleep1.jpg" alt="" class="illustration ">
-               <img src="art/" alt="" class="illustration ">
-               <img src="art/" alt="" class="illustration ">
-               <img src="art/" alt="" class="illustration ">
-               <img src="art/" alt="" class="illustration ">
-               <img src="art/" alt="" class="illustration ">
-               <img src="art/" alt="" class="illustration ">
-               <img src="art/" alt="" class="illustration ">
-           </div>-->
-   </div>
-   <script src="script.js"></script>
+    <div class="row">
+        <div class="col span_6_of_12">
+          <div class="column">
+            <a href="#"><img src="images/comp 2_1.gif" alt=""></a>
+          </div>
+          <div class="column">
+            <a href="#"><img src="images/riso.jpeg" alt=""></a>
+          </div>
+          <div class="column">
+            <a href=""><img src="images/springweekendcover.jpg" alt=""></a>
+          </div>
+        </div>
+    </div><!--end of pics-->
+
+
+    <div class="section group">
+      <footer>
+        <div class="col span_12_of_12">
+          made by stephanie wu
+        </div>
+      </footer>
+    </div><!--end of footer-->
+  </div>
+
+
+      <script src="js/jquery.js" charset="utf-8"></script>
+      <script src="js/jquery.slimenu.js" charset="utf-8"></script>
+            <script type="text/javascript">
+                $('#navigation').slimmenu(
+                  {
+                    resizeWidth: '800',
+                    collapserTitle: 'Main Menu',
+                    animSpeed: 'medium',
+                    easingEffect: null,
+                    indentChildren: false,
+                    childrenIndenter: '&nbsp;'
+                  });
+            </script>
   </body>
+</html>
