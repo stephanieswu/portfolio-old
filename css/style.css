@@ -1,13 +1,16 @@
 /* GLOBAL STYLES */
 
-
+html{
+  box-sizing: border-box;
+}
 
 body{
     font-family: 'Josefin Sans', sans-serif;
+
 }
 
 img{
-  width: 100%;
+  width: 110%;
 }
 
 
@@ -21,31 +24,71 @@ a:hover{
   color: red;
   opacity: .7;
 }
+      nav{
+        text-align: center;
+      }
 
-header ul{
-  font-size: 1.2em;
-  list-style: none;
-  text-align: center;
-  display: inline-flex;
-  background-color: none;
-  margin: 25px 30px;
-  padding: 0;
-}
+      header ul{
+        font-size: 1.2em;
+        list-style: none;
+        align-items: center;
+        display:inline-flex;
+        margin:auto;
 
-header li {
-  padding: 0 10px;
-}
+      }
+
+      header li {
+        padding: 0 10px;
+      }
 
 .bigtitle{
   text-align: center;
   font-size: .9em;
-  margin-top: 10px;
-  padding:200px 0 300px 0;
+  padding: 100px 0 150px 0;
 }
+
+      .container {
+      padding: 0 .5rem;
+      }
+      .responsive-image {
+        width: 100%;
+      }
+
+      .cell{
+        margin: 1rem;
+      }
+      .cell img {
+        display: block;
+
+
+      }
+      .tooltip {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+    }
+    .tooltip:hover{
+      visibility: visible;
+      }
+
 
 footer{
   text-align: center;
+  float: bottom;
+  margin-top: 3rem;
+  color: grey;
 }
+
+/***************DESKTOP**********************/
+
 
 @media screen and (min-width:600px) {
 
@@ -56,34 +99,50 @@ footer{
 
   header li{
     display: inline;
-    font-size: .8em;
-    margin-top: 0px;
+    font-size: 1.2em;
+    margin-top: 15px;
 
   }
 header ul{
   float: right;
   padding-right: 20px;
+  padding-top: 20px;
 }
 
 .bigtitle{
   font-size: 1em;
-  max-width: 600px;
+  max-width: 700px;
   margin:0 auto;
-  padding: 250px 0 375px 0;
+  padding: 250px 0 250px 0;
 
 }
 
-.row {
-  display: flex;
-}
+    .grid {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+     }
+     .cell {
+       width: calc(50% - 2rem);
+     }
 
-.column {
-  flex: 33.33%;
-  padding: 5px;
-}
+      img:hover{
+       opacity: .5;
+       cursor: cell;
+     }
+
+      img:hover .tooltip{
+       visibility: visible;
+       }
+
+
+
+
 
 footer{
   text-align: center;
 }
+
+
 
 }
