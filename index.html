@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive-grid.css">
-    <link rel="stylesheet" href="css/slimmenu.min.css">
 
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -18,37 +17,37 @@
 
 
       <header>
-          <div class="section group">
-              <div class="col span_12_of_12">
+          <nav>
+              <div class="">
                   <ul>
-                    <li><a href="info.html">info</a></li>
-                    <li ><a href="#">illustration</a></li>
-                    <li ><a href="#">design</a></li>
-                    <li ><a href="#">animation</a></li>
+                    <li><a href="info.html">info</a>
+                    </li><li><a href="index.html">work</a>
+                    <!--</li><li><a href="#">illustration</a></li><li ><a href="#">design</a></li><li ><a href="#">animation</a></li>-->
                   </ul>
               </div> <!--end of nav-->
 
               <div class="bigtitle">
-                  <div class="col span_12_of_12 ">
                       <h1>Stephanie Wu is an illustrator and designer studying at Rhode Island School of Design</h1>
-                  </div>
-              </div><!--end of bigtitle-->
-          </div><!--end of header-->
+              <nav><!--end of bigtitle-->
     </header>
 
-    <div class="row">
-        <div class="col span_6_of_12">
-          <div class="column">
-            <a href="#"><img src="images/comp 2_1.gif" alt=""></a>
-          </div>
-          <div class="column">
-            <a href="#"><img src="images/riso.jpeg" alt=""></a>
-          </div>
-          <div class="column">
-            <a href=""><img src="images/springweekendcover.jpg" alt=""></a>
-          </div>
+
+    <div class="container">
+        <div class="grid">
+            <div class="cell">
+              <a href="#"><img src="images/springweekendcover.jpg" class="responsive-image" alt=""> <span class="tooltip"> Spring Weekend Cover</span></a>
+            </div>
+            <div class="cell">
+                <a href=""><img src="images/comp 2_1.gif" class="responsive-image" alt=""></a>
+            </div>
+            <div class="cell">
+                <a href=""><img src="images/riso 4.jpeg" class="responsive-image" alt=""></a>
+            </div>
+            <div class="cell">
+                <a href="#"><img src="images/riso.jpeg" class="responsive-image" alt=""></a>
+            </div>
         </div>
-    </div><!--end of pics-->
+    </div>
 
 
     <div class="section group">
@@ -59,6 +58,7 @@
       </footer>
     </div><!--end of footer-->
   </div>
+
 
 
       <script src="js/jquery.js" charset="utf-8"></script>
