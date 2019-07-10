@@ -10,12 +10,13 @@ body{
 }
 
 img{
-  width: 110%;
+  width: 100%;
 }
 
 
 a {
-  text-decoration: none;
+  text-decoration:none;
+  text-shadow: 1px 1px	tomato;
   color: black;
 
 }
@@ -26,7 +27,8 @@ a:hover{
 }
       nav{
         text-align: center;
-        padding: 2rem;
+        padding: 2rem 0 0 0;
+
       }
 
       header ul{
@@ -102,6 +104,8 @@ footer{
     font-size: .9em;
     height: 5rem;
     padding: 6rem 0 ;
+    /*text-shadow: 1px 1px tomato;
+    color: navy;*/
 
   }
 
@@ -135,28 +139,28 @@ footer{
 @media screen and (min-width:800px) {
 
   .wrapper{
-    max-width:1250px;
+    max-width:1000px;
     margin: 0 auto;
   }
 
       header li{
         display: inline;
-        font-size: 1.2em;
-        margin-top: 15px;
+        font-size: 1em;
+        margin-top: 1rem;
 
       }
     header ul{
       float: right;
       padding-right: 20px;
-      padding-top: 20px;
+      padding-top: 10px;
     }
 
 .bigtitle{
   visibility: visible;
-  font-size: 1em;
+  font-size: .8em;
   max-width: 700px;
   margin:0 auto;
-  padding: 10rem 0 ;
+  padding: 8rem 0 ;
   height: 10rem;
 
 }
