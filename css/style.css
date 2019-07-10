@@ -26,6 +26,7 @@ a:hover{
 }
       nav{
         text-align: center;
+        padding: 2rem;
       }
 
       header ul{
@@ -34,6 +35,7 @@ a:hover{
         align-items: center;
         display:inline-flex;
         margin:auto;
+        padding: 0;
 
       }
 
@@ -42,9 +44,11 @@ a:hover{
       }
 
 .bigtitle{
+  visibility: hidden;
   text-align: center;
   font-size: .9em;
-  padding: 100px 0 150px 0;
+  height: 1rem;
+
 }
 
       .container {
@@ -86,34 +90,74 @@ footer{
   margin-top: 3rem;
   color: grey;
 }
+/***************IPAD**********************/
+@media screen and (min-width:600px){
+  .wrapper{
+    max-width: 900px;
+  }
+
+  .bigtitle{
+    visibility: visible;
+    text-align: center;
+    font-size: .9em;
+    height: 5rem;
+    padding: 6rem 0 ;
+
+  }
+
+  .grid {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+   }
+   .cell {
+     width: calc(50% - 2rem);
+   }
+
+    img:hover{
+     opacity: .5;
+     cursor: cell;
+   }
+
+    img:hover .tooltip{
+     visibility: visible;
+     }
+
+
+
+
+
+}
 
 /***************DESKTOP**********************/
 
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:800px) {
 
   .wrapper{
     max-width:1250px;
     margin: 0 auto;
   }
 
-  header li{
-    display: inline;
-    font-size: 1.2em;
-    margin-top: 15px;
+      header li{
+        display: inline;
+        font-size: 1.2em;
+        margin-top: 15px;
 
-  }
-header ul{
-  float: right;
-  padding-right: 20px;
-  padding-top: 20px;
-}
+      }
+    header ul{
+      float: right;
+      padding-right: 20px;
+      padding-top: 20px;
+    }
 
 .bigtitle{
+  visibility: visible;
   font-size: 1em;
   max-width: 700px;
   margin:0 auto;
-  padding: 250px 0 250px 0;
+  padding: 10rem 0 ;
+  height: 10rem;
 
 }
 
