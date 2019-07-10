@@ -6,70 +6,82 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive-grid.css">
-    <link rel="stylesheet" href="css/slimmenu.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Stephanie Wu</title>
-
-    <style media="screen">
-
+  <style media="screen">
       .info{
-        padding: 20px;
+        text-align: left;
       }
-      .logo{
-        text-align: center;
+
+      img{
+        padding-top: 2rem;
+        align-items: center;
+
       }
-      #self{
-        width: 500px;
-        margin: 0 auto;
-      }
-    </style>
-<head>
-    <body>
+
+  @media screen and (min-width:600px){
+    .grid{
+      margin: 5rem 0;
+    }
+
+  .info{
+    margin: auto;
+  }
+
+  img{
+    padding: 0;
+  }
+
+
+  }
+
+  @media screen and (min-width:800px){
+  .grid{
+    margin: 8rem 0;
+  }
+  img{
+    padding: 0;
+  }
+  .info{
+    max-width: 500px;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .wrapper{
+    max-width: 900px;
+  }
+
+}
+
+  </style>
+<body>
+  <div class="wrapper">
+
+
       <header>
-        <div class="logo">
-            <div class="col span_12_of_12 ">
-                <h1><a href="index.html">Stephanie Wu</a> </h1>
+        <nav>
+            <div class="list">
+                <ul>
+                  <li><a href="info.html">info</a>
+                  </li><li><a href="index.html">work</a>
+                </ul>
+            </div> <!--end of nav-->
+
+        <div class="grid">
+          <div class="cell">
+            <img src="images/self.jpg" alt="">
+          </div>
+            <div class="cell">
+              <p class="info"><strong>Stephanie is an illustrator and designer</strong> based in Boston and Providence. She is currently pursing a BFA in Illustration at <a href="">Rhode Island School of Design</a>. She is deeply interested in observing others and herself. Much of her work stems from personal experiences. <br><br>
+                Outside of the class room, she works with <a href="http://www.brownpoliticalreview.org/">Brown Political Review</a>, <a href="#">Brown Daily Herald Post</a>, and <a href="#">RISD IDSA</a>. When she has nothing to do catch her watching Mad Men and trying to boulder as much as possible.
+                <br><br>
+                <a href="#">resume</a>
+              </p>
             </div>
         </div>
-
-          <div class="section group">
-              <div class="col span_12_of_12">
-                  <ul>
-                    <li><a href="info.html">info</a></li>
-                    <li ><a href="#">illustration</a></li>
-                    <li ><a href="#">design</a></li>
-                    <li ><a href="#">animation</a></li>
-                  </ul>
-              </div> <!--end of nav-->
-
-              <div class="section group gallery">
-                  <div class="col span_6_of_12">
-                    <div class="feature">
-                      <a href=""><img src="images/self.jpg" id="self" alt=""></a>
-                    </div>
-              </div>
-
-      <div class="section group">
-        <div class="col span_4_of_12">
-          <p class="info">
-          <strong>Stephanie is an illustrator and designer</strong> based in Boston and Providence. She is currently pursing a BFA in Illustration at Rhode Island School of Design. She is deeply interested in observing others and herself. Much of her work stems from personal experiences. <br><br>
-          Outside of the class room, she works with Brown Political Review, Brown Daily Herald Post, and RISD IDSA. When she has nothing to do catch her watching Mad Men and trying to boulder as much as possible.
-          <br><br>
-          <a href="">resume</a>
-          </p>
-
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
       </body>
 <head>
 </html>
