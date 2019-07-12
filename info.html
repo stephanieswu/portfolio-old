@@ -21,6 +21,9 @@ body{
 
 img{
   width: 100%;
+      padding-top: 2rem;
+        align-items: center;
+
 }
 
 
@@ -132,6 +135,7 @@ footer{
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
+    margin: 5rem 0;
    }
    .cell {
      width: calc(50% - 2rem);
@@ -146,9 +150,9 @@ footer{
      visibility: visible;
      }
 
-
-
-
+    .info{
+    margin: auto;
+  }
 
 }
 
@@ -174,25 +178,20 @@ footer{
       padding-top: 10px;
     }
 
-.bigtitle{
-  visibility: visible;
-  font-size: .8em;
-  max-width: 700px;
-  margin:0 auto;
-  padding: 8rem 0 ;
-  height: 10rem;
-
-}
 
     .grid {
        display: flex;
        flex-wrap: wrap;
        flex-direction: row;
+      margin: 8rem 0;
      }
      .cell {
        width: calc(50% - 2rem);
      }
 
+  img{
+    padding: 0;
+  }
       img:hover{
        opacity: .5;
        cursor: cell;
@@ -201,6 +200,17 @@ footer{
       img:hover .tooltip{
        visibility: visible;
        }
+
+    .info{
+    max-width: 500px;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .wrapper{
+    max-width: 900px;
+  }
 
 
 
