@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="css/responsive-grid.css">
 
 
+
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <title>Stephanie Wu</title>
   </head>
   <body>
@@ -40,10 +45,19 @@
                 <a href="mushrooms.html"><img src="images/Comp 2_1.gif" class="responsive-image" alt=""></a>
             </div>
             <div class="cell">
-                <a href=""><img src="images/riso 4.jpeg" class="responsive-image" alt=""></a>
+                <a href="gif.html"><img src="images/house.gif" class="responsive-image" alt=""></a>
             </div>
             <div class="cell">
-                <a href="#"><img src="images/riso.jpeg" class="responsive-image" alt=""></a>
+                <a href="riso.html"><img src="images/riso scans/riso 4.jpeg" class="responsive-image" alt=""></a>
+            </div>
+            <div class="cell">
+                <a href="riso.html"><img src="images/riso scans/riso 1.jpeg" class="responsive-image" alt=""></a>
+            </div>
+            <div class="cell">
+                <a href="riso.html"><img src="images/riso scans/riso 2.jpeg" class="responsive-image" alt=""></a>
+            </div>
+            <div class="cell">
+                <a href="riso.html"><img src="images/riso scans/riso 3.jpeg" class="responsive-image" alt=""></a>
             </div>
         </div>
     </div>
@@ -57,7 +71,18 @@
       </footer>
     </div><!--end of footer-->
   </div>
-  
+
+  <script>
+
+  $(".grid").imagesLoaded(function() {
+      $(".grid").masonry({
+        itemSelector: ".cell"
+      });
+    });
+
+
+
+</script>
   </body>
 </html>
 
