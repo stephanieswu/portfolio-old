@@ -1,6 +1,6 @@
 /* GLOBAL STYLES */
 
-html{
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
@@ -11,6 +11,8 @@ body{
 
 img{
   width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 
@@ -143,6 +145,9 @@ footer{
     margin: 0 auto;
   }
 
+    nav{
+
+    }
       header li{
         display: inline;
         font-size: 1em;
@@ -153,6 +158,8 @@ footer{
       float: right;
       padding-right: 20px;
       padding-top: 10px;
+      position: sticky;
+      top: 0;
     }
 
 .bigtitle{
@@ -174,9 +181,9 @@ footer{
        width: calc(50% - 2rem);
      }
 
-      img:hover{
+     img:hover{
        opacity: .5;
-       cursor: cell;
+       
      }
 
       img:hover .tooltip{
