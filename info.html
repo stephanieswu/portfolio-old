@@ -3,181 +3,104 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive-grid.css">
+
+
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Stephanie Wu</title>
-  <style>
-    html{
-  box-sizing: border-box;
-}
 
-body{
-    font-family: 'Josefin Sans', sans-serif;
-
-}
-
-img{
-  width: 100%;
-      padding-top: 2rem;
-        align-items: center;
-
-}
-
-
-a {
-  text-decoration:none;
-  text-shadow: 1px 1px	tomato;
-  color: black;
-
-}
-
-a:hover{
-  color: red;
-  opacity: .7;
-}
-      nav{
-        text-align: center;
-        padding: 2rem 0 0 0;
-
-      }
-
-      header ul{
-        font-size: 1.2em;
-        list-style: none;
-        align-items: center;
-        display:inline-flex;
-        margin:auto;
-        padding: 0;
-
-      }
-
-      header li {
-        padding: 0 10px;
-      }
-
-.bigtitle{
-  visibility: hidden;
-  text-align: center;
-  font-size: .9em;
-  height: 1rem;
-
-}
-
-      .container {
-      padding: 0 .5rem;
-      }
-      .responsive-image {
-        width: 100%;
-      }
-
-      .cell{
-        margin: 1rem;
-      }
-      .cell img {
-        display: block;
-
-
-      }
-      .tooltip {
-      visibility: hidden;
-      width: 120px;
-      background-color: black;
-      color: #fff;
-      text-align: center;
-      border-radius: 6px;
-      padding: 5px 0;
-
-      /* Position the tooltip */
-      position: absolute;
-      z-index: 1;
-    }
-    .tooltip:hover{
-      visibility: visible;
-      }
-
-
-     .info{
+    <style media="screen">
+      .info{
         text-align: left;
       }
 
       img{
-        padding-top: 2rem;
+        padding-top: 1rem;
         align-items: center;
 
       }
-footer{
-  text-align: center;
-  float: bottom;
-  margin-top: 3rem;
-  color: grey;
-}
-/***************IPAD**********************/
-@media screen and (min-width:600px){
+
+
+  @media screen and (min-width:600px){
+    .grid{
+      margin: 5rem 0;
+    }
+
+  .info{
+    margin: auto;
+  }
+
+  img{
+    padding: 0;
+  }
+
+
+  }
+
+  @media screen and (min-width:800px){
+  .grid{
+    margin: 8rem 0;
+  }
+  img{
+    padding: 0;
+  }
+  .info{
+    max-width: 500px;
+    padding: 0;
+    margin: 0;
+
+  }
+
   .wrapper{
     max-width: 900px;
   }
 
-  .bigtitle{
-    visibility: visible;
-    text-align: center;
-    font-size: .9em;
-    height: 5rem;
-    padding: 6rem 0 ;
-    /*text-shadow: 1px 1px tomato;
-    color: navy;*/
-
-  }
-
-  .grid {
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: row;
-    margin: 5rem 0;
-   }
-   .cell {
-     width: calc(50% - 2rem);
-   }
-
-    img:hover{
-     opacity: .5;
-     cursor: cell;
-   }
-
-    img:hover .tooltip{
-     visibility: visible;
-     }
-
-    .info{
-    margin: auto;
-  }
-
 }
 
-/***************DESKTOP**********************/
+  </style>
+  </head>
+<body>
+  <div class="wrapper">
 
 
-@media screen and (min-width:800px) {
+    <header>
+        <nav>
+            <div class="list">
+                <ul>
+                  <li><a href="info.html">info</a>
+                  </li><li><a href="index.html">work</a>
+                </ul>
+            </div> <!--end of nav-->
+    </header>
+        <div class="grid">
+          <div class="cell about">
+            <img src="images/self.jpg" alt="">
+          </div>
+            <div class="cell about">
+              <p class="info">Stephanie is an illustrator and designer based in Boston and Providence. She is currently pursing a BFA in Illustration at <a href="https://www.risd.edu/" target="_blank">Rhode Island School of Design</a>. She is deeply interested in observing others and herself. Much of her work stems from personal experiences. <br><br>
+                Outside of the class room, she works with <a href="http://www.brownpoliticalreview.org/" target="_blank">Brown Political Review</a>, <a href="http://post.browndailyherald.com/" target="_blank">Brown Daily Herald Post</a>, and <a href="#" target="_blank">RISD IDSA</a>. When she has nothing to do catch her watching Mad Men and trying to boulder as much as possible.
+                <br><br>
+                <a href="#">resume</a>
+              </p>
+            </div>
+        </div>
 
-  .wrapper{
-    max-width:1000px;
-    margin: 0 auto;
-  }
+        <div class="section group">
+          <footer>
+            <div class="col span_12_of_12">
+              © 2019 Stephanie Wu
+            </div>
+          </footer>
+        </div><!--end of footer-->
+        </div>
 
-      header li{
-        display: inline;
-        font-size: 1em;
-        margin-top: 1rem;
 
-      }
-    header ul{
-      float: right;
-      padding-right: 20px;
-      padding-top: 10px;
-    }
+      </body>
 
+</html>
 
     .grid {
        display: flex;
