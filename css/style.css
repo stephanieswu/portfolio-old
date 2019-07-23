@@ -92,7 +92,8 @@ footer{
 /***************IPAD**********************/
 @media screen and (min-width:600px){
   .wrapper{
-    max-width: 900px;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
   .bigtitle{
@@ -100,7 +101,7 @@ footer{
     text-align: center;
     font-size: .9em;
     height: 5rem;
-    padding: 12rem 0 14rem 0 ;
+    padding: 6rem 0 12rem 0 ;
     /*text-shadow: 1px 1px tomato;
     color: navy;*/
 
@@ -132,7 +133,7 @@ footer{
 @media screen and (min-width:800px) {
 
   .wrapper{
-    max-width:1000px;
+    max-width:1200px;
     margin: 0 auto;
   }
 
@@ -141,7 +142,7 @@ footer{
     }
       header li{
         display: inline;
-        font-size: 1em;
+        font-size: 1.3em;
         margin-top: 1rem;
 
       }
@@ -155,10 +156,10 @@ footer{
 
 .bigtitle{
   visibility: visible;
-  font-size: .8em;
+  font-size: .9em;
   max-width: 700px;
   margin:0 auto;
-  padding: 12rem 0 14rem 0 ;
+  padding: 14rem 0 18rem 0 ;
   height: 10rem;
 
 }
