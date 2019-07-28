@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/project.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/responsive-grid.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Stephanie Wu</title>
+
+    <style media="screen">
+    .info{
+      text-align: center;
+      margin: 0 auto;
+    }
+
+
+    @media screen and (min-width:600px){
+      .wrapper{
+        max-width: 900px;
+      }
+
+      .info{
+        text-align: left;
+        margin-top: 5rem;
+      }
+
+
+
+    }
+
+    </style>
+    </head>
+
+    <body>
+
+      <header>
+          <nav>
+              <div class="list">
+                  <ul>
+                    <li><a href="info.html">info</a>
+                    </li><li><a href="index.html">work</a>
+                  </ul>
+              </div> <!--end of nav-->
+
+          <nav>
+      </header>
+
+      <p class="info">I illustrated the cover for the <a href="http://post.browndailyherald.com/" target= "_blank">Brown Daily Herald post-</a>'s annual Spring Weekend edition. Layout, design, and photos by Nina Yuchi and Jacob Lee. View the full issue <a href="https://issuu.com/postmagazinebdh/docs/post-springweekend_v5_nosdw__edited" target="_blank">here.</a></p>
+
+      <div class="grid">
+        <div class="cell">
+           <img src="images/springweekend/4.jpg" alt="">
+        </div>
+        <div class="cell">
+           <img src="images/springweekend/5.jpg" alt="">
+        </div>
+
+      </div>
+
+
+
+      <div class="section group">
+        <footer>
+          <div class="col span_12_of_12">
+            © 2019 Stephanie Wu
+          </div>
+        </footer>
+      </div><!--end of footer-->
+
+
+      <script>
+
+      function myFunction(x) {
+      if (x.matches) { // If media query matches
+        $()
+
+      } else {
+        $(".grid").imagesLoaded(function() {
+            $(".grid").masonry({
+              itemSelector: ".cell"
+            });
+          });
+
+      }
+      }
+
+      var x = window.matchMedia("(max-width: 800px)")
+      myFunction(x) // Call listener function at run time
+      x.addListener(myFunction) // Attach listener function on state change
+
+
+
+
+      </script>
+    </body>
+</html>
