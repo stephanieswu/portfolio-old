@@ -15,8 +15,9 @@
 
     <style media="screen">
     .info{
-      text-align: center;
+      text-align: left;
       margin: 0 auto;
+      padding: 0 1rem;
     }
 
 
@@ -29,6 +30,7 @@
         text-align: left;
         margin-top: 5rem;
       }
+
 
 
 
@@ -54,10 +56,10 @@
       <p class="info">I illustrated the cover for the <a href="http://post.browndailyherald.com/" target= "_blank">Brown Daily Herald post-</a>'s annual Spring Weekend edition. Layout, design, and photos by Nina Yuchi and Jacob Lee. View the full issue <a href="https://issuu.com/postmagazinebdh/docs/post-springweekend_v5_nosdw__edited" target="_blank">here.</a></p>
 
       <div class="grid">
-        <div class="cell">
+        <div class="cell spring">
            <img src="images/springweekend/4.jpg" alt="">
         </div>
-        <div class="cell">
+        <div class="cell spring">
            <img src="images/springweekend/5.jpg" alt="">
         </div>
 
@@ -74,29 +76,6 @@
       </div><!--end of footer-->
 
 
-      <script>
 
-      function myFunction(x) {
-      if (x.matches) { // If media query matches
-        $()
-
-      } else {
-        $(".grid").imagesLoaded(function() {
-            $(".grid").masonry({
-              itemSelector: ".cell"
-            });
-          });
-
-      }
-      }
-
-      var x = window.matchMedia("(max-width: 800px)")
-      myFunction(x) // Call listener function at run time
-      x.addListener(myFunction) // Attach listener function on state change
-
-
-
-
-      </script>
     </body>
 </html>
