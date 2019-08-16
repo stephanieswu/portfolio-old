@@ -15,18 +15,33 @@ img{
   vertical-align: middle;
 }
 
-
-a {
+.nav {
   text-decoration:none;
   text-shadow: 1px 1px	tomato;
   color: black;
 
 }
 
-a:hover{
+.nav:hover{
   color: lightblue;
   opacity: .7;
 }
+
+a{
+  text-decoration:none;
+  color: tomato;
+
+
+
+}
+a:hover{
+  text-decoration:none;
+  text-shadow: 1px 1px	tomato;
+  color: black;
+
+}
+
+
       nav{
         text-align: center;
         padding: 2rem 0 0 0;
