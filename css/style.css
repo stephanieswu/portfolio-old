@@ -49,7 +49,7 @@ a:hover{
       }
 
       header ul{
-        font-size: 1.5em;
+        font-size: 1.3em;
         list-style: none;
         align-items: center;
         display:inline-flex;
@@ -173,7 +173,6 @@ footer{
       padding-top: 10px;
       position: sticky;
       top: 0;
-       font-size: 1.2em;
     }
 
 .bigtitle{
