@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/project.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive-grid.css">
 
@@ -11,9 +12,46 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Stephanie Wu</title>
-  </head>
-  <body>
-  <div class="wrapper">
+
+    <style media="screen">
+    .info{
+      text-align: left;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .pic{
+      width: 80%;
+      margin: 0 auto;
+    }
+
+
+
+
+    @media screen and (min-width:600px){
+      .wrapper{
+        max-width: 900px;
+      }
+
+      .info{
+        text-align: left;
+        margin-top: 5rem;
+      }
+      .pic{
+        width: 50%;
+        padding:1rem;
+      }
+
+
+
+
+    }
+
+    </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
 
 
       <header>
@@ -25,9 +63,27 @@
                   </ul>
               </div> <!--end of nav-->
 
+          <nav>
+      </header>
+
+      <p class="info">My experiences from sophomore year of college inspired <strong>Small Talk</strong>, an interactive narrative following the daily life of a lonely dot. This project explores a question I was really trying to figure out myself, how do you break past small talk and make a genuine connection? <strong>Small Talk</strong> was created during Wintersession 2019 in a month.<br><br>View the live site <a href="https://stephanieswu.github.io/smalltalk/index.html" target= "_blank">here</a></p>
 
 
 
+    <div class="grid">
+        <div class="cell">
+           <img src="images/smalltalk/pic.png" alt="">
+        </div>
+        <div class="cell">
+           <img src="images/smalltalk/pic2.png" alt="">
+        </div>
+        </div>
+
+
+
+      <div class="next">
+          <a href="idsa.html">next</a>
+      </div>
 
 
 
@@ -38,7 +94,9 @@
           </div>
         </footer>
       </div><!--end of footer-->
-    </div>
+      </div>
 
+
+        </div>
     </body>
-  </html>
+</html>
