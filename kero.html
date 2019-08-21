@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/project.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/responsive-grid.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <title>Stephanie Wu</title>
+
+    <style media="screen">
+    .info{
+      text-align: left;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .pic{
+      width: 80%;
+      margin: 0 auto;
+    }
+
+
+
+
+    @media screen and (min-width:600px){
+      .wrapper{
+        max-width: 900px;
+      }
+
+      .info{
+        text-align: left;
+        margin-top: 5rem;
+      }
+      .pic{
+        width: 50%;
+        padding:1rem;
+      }
+
+
+
+
+    }
+
+    </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+
+      <header>
+          <nav>
+              <div class="list">
+                  <ul>
+                    <li><a href="info.html"  class="nav">info</a>
+                    </li><li><a href="index.html"  class="nav">work</a>
+                  </ul>
+              </div> <!--end of nav-->
+
+          <nav>
+      </header>
+
+      <p class="info">Mock album redesigns of Kero Kero Bonito's  <a href="https://open.spotify.com/album/0dAMC0nNikIjhD8LeRZfhH?si=a_FT7Ic8QdOkD2Ze6vaemg" target = "_blank">Bonito Generation</a> and Julien Baker, Phoebe Bridgers, & Lucy Dacus's <a href="https://open.spotify.com/album/5BRORKnC2HD5xhgUyR31SH?si=Ony6s0iMSj6p8ztfILiLow">Boygenius</a>. </p>
+
+
+
+    <div class="grid">
+        <div class="cell">
+           <img src="images/vinyl/keroall.jpg" alt="">
+        </div>
+        <div class="cell">
+           <img src="images/vinyl/kerofront.jpg" alt="">
+        </div>
+        <div class="cell">
+           <img src="images/vinyl/keroback.jpg" alt="">
+        </div>
+        <div class="cell">
+           <img src="images/vinyl/keroback-05.jpg" alt="">
+        </div>
+        <div class="cell">
+           <img src="images/vinyl/keroback-06.png" alt="">
+        </div>
+        <div class="cell">
+           <img src="images/vinyl/keroposter copy.jpg" alt="">
+        </div>
+        <div class="cell">
+           <img src="images/vinyl/boygeniusback.jpg" alt="">
+        </div><div class="cell">
+           <img src="images/vinyl/boygeniusfront.jpg" alt="">
+        </div>
+        </div>
+
+
+
+      <div class="next">
+          <a href="idsa.html">next</a>
+      </div>
+
+
+
+      <div class="section group">
+        <footer>
+          <div class="col span_12_of_12">
+            © 2019 Stephanie Wu
+          </div>
+        </footer>
+      </div><!--end of footer-->
+      </div>
+
+
+  </div>
+
+  <script>
+
+  function myFunction(x) {
+    if (x.matches) { // If media query matches
+      $()
+
+    } else {
+      $(".grid").imagesLoaded(function() {
+          $(".grid").masonry({
+            itemSelector: ".cell"
+          });
+        });
+
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 800px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state change
+
+
+
+
+</script>
+    </body>
+</html>
