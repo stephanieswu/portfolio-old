@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive-grid.css">
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Stephanie Wu</title>
@@ -49,8 +49,8 @@
           <nav>
               <div class="list">
                   <ul>
-                    <li><a href="info.html"  class="nav">info</a>
-                    </li><li><a href="index.html"  class="nav">work</a>
+                    <li><a href="info"  class="nav">info</a>
+                    </li><li><a href="index"  class="nav">work</a>
                   </ul>
               </div> <!--end of nav-->
 
@@ -59,28 +59,36 @@
 
       <p class="info">Along with <a href="https://www.elysonpark.com/" target ="_blank">Elyson Park</a>, I design and illustrate for RISD's chapter of  Industrial Designers of America. Select work from IDSA includes a logo rebrand, posters for events, and social media posts.  </p>
 
+      <div class="container gallery-container">
 
-      <div class="grid">
-        <div class="cell spring">
-           <img src="images/idsa/redlogo2.gif" alt="">
-        </div>
-        <div class="cell spring">
-           <img src="images/idsa/idsaanimation 2.gif" alt="">
-        </div>
-        <div class="cell spring">
-           <img src="images/idsa/IDSA_MOJOTECH_square-09.png" alt="">
-        </div>
-        <div class="cell spring">
-           <img src="images/idsa/elyson.jpg" alt="">
-        </div>
+          <div class="tz-gallery grid ">
+
+                  <div class="cell">
+                      <a class="lightbox " href="images/idsa/redlogo2.gif">
+                      <img src="images/idsa/redlogo2.gif" class="card-img-top">
+                      </a>
+                  </div>
+                  <div class="cell">
+                      <a class="lightbox " href="images/idsa/idsaanimation 2.gif">
+                      <img src="images/idsa/idsaanimation 2.gif" class="card-img-top">
+                      </a>
+                  </div>
+                  <div class="cell">
+                      <a class="lightbox " href="images/idsa/IDSA_MOJOTECH_square-09.png">
+                      <img src="images/idsa/IDSA_MOJOTECH_square-09.png" class="card-img-top">
+                      </a>
+                  </div><div class="cell">
+                      <a class="lightbox " href="images/idsa/elyson.jpg">
+                      <img src="images/idsa/elyson.jpg" class="card-img-top">
+                      </a>
+                  </div>
 
       </div>
-<!--mojotechgreen.png
-IDSA_MOJOTECH_insta1-06.png
-IDSA_MOJOTECH_insta2-07.png
-IDSA_MOJOTECH_insta3-08.png-->
+
+      </div> <!--end of gallery-->
+
       <div class="next">
-          <a href="kero.html">next</a>
+          <a href="kero">next</a>
       </div>
 
 
@@ -96,5 +104,9 @@ IDSA_MOJOTECH_insta3-08.png-->
 
 
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script>
+        baguetteBox.run('.tz-gallery');
+      </script>
     </body>
 </html>
