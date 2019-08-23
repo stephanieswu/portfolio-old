@@ -9,6 +9,26 @@ body{
 
 }
 
+      .alert {
+        padding:.5rem;
+        background-color: #f44336;
+        color: white;
+        text-align: center;
+      }
+
+      .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .closebtn:hover {
+        color: black;}
 img{
   width: 100%;
   height: auto;
@@ -49,12 +69,18 @@ a:hover{
       }
 
       header ul{
-        font-size: 1.3em;
+        font-size: 1.5em;
         list-style: none;
         align-items: center;
-        display:inline-flex;
+        display:inline-flex ;
         margin:auto;
         padding: 0;
+        position: sticky;
+        top: 0;
+
+      }
+
+      ul{
 
       }
 
@@ -117,6 +143,7 @@ footer{
     margin: 0 auto;
   }
 
+
   .bigtitle{
     visibility: visible;
     text-align: center;
@@ -174,6 +201,7 @@ footer{
       position: sticky;
       top: 0;
     }
+
 
 .bigtitle{
   visibility: visible;
