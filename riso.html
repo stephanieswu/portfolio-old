@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive-grid.css">
 
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -53,8 +53,8 @@
           <nav>
               <div class="list">
                   <ul>
-                    <li><a href="info.html"  class="nav">info</a>
-                    </li><li><a href="index.html"  class="nav">work</a>
+                    <li><a href="info"  class="nav">info</a>
+                    </li><li><a href="index"  class="nav">work</a>
                   </ul>
               </div> <!--end of nav-->
 
@@ -62,8 +62,42 @@
       </header>
 
         <p class="info">Prints from the wonderful risograph printer</p>
+        <div class="container gallery-container">
 
-              <div class="container">
+            <div class="tz-gallery grid ">
+
+                    <div class="cell">
+                        <a class="lightbox " href="images/riso scans/riso 2.jpeg.jpg">
+                        <img src="images/riso scans/riso 2.jpeg" class="card-img-top">
+                        </a>
+                    </div>
+                    <div class="cell">
+                        <a class="lightbox " href="images/riso scans/riso.jpeg">
+                        <img src="images/riso scans/riso.jpeg" class="card-img-top">
+                        </a>
+                    </div>
+                    <div class="cell">
+                        <a class="lightbox " href="images/riso scans/riso 1.jpeg">
+                        <img src="images/riso scans/riso 1.jpeg" class="card-img-top">
+                        </a>
+                    </div>
+                    <div class="cell">
+                        <a class="lightbox " href="images/riso scans/riso 3.jpeg">
+                        <img src="images/riso scans/riso 3.jpeg" class="card-img-top">
+                        </a>
+                    </div>
+                    <div class="cell">
+                        <a class="lightbox " href="images/riso scans/riso 4.jpeg">
+                        <img src="images/riso scans/riso 4.jpeg" class="card-img-top">
+                        </a>
+                    </div>
+
+
+        </div>
+
+        </div> <!--end of gallery-->
+
+            <!--  <div class="container">
                   <div class="grid">
 
                       <div class="cell gif">
@@ -82,11 +116,11 @@
                       <img src="images/riso scans/riso 1.jpeg" alt="">
                       </div>
 
-              </div>
+              </div>-->
 
 
       <div class="next">
-          <a href="gif.html">next</a>
+          <a href="gif">next</a>
       </div>
 
 
@@ -98,6 +132,10 @@
         </footer>
       </div><!--end of footer-->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run('.tz-gallery');
+  </script>
     <script>
 
     function myFunction(x) {
@@ -122,5 +160,6 @@
 
 
   </script>
+
     </body>
   </html>
