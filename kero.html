@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive-grid.css">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -61,8 +62,8 @@
           <nav>
               <div class="list">
                   <ul>
-                    <li><a href="info.html"  class="nav">info</a>
-                    </li><li><a href="index.html"  class="nav">work</a>
+                    <li><a href="info"  class="nav">info</a>
+                    </li><li><a href="index"  class="nav">work</a>
                   </ul>
               </div> <!--end of nav-->
 
@@ -71,38 +72,81 @@
 
       <p class="info">Mock album redesigns of Kero Kero Bonito's  <a href="https://open.spotify.com/album/0dAMC0nNikIjhD8LeRZfhH?si=a_FT7Ic8QdOkD2Ze6vaemg" target = "_blank">Bonito Generation</a> and Julien Baker, Phoebe Bridgers, & Lucy Dacus's <a href="https://open.spotify.com/album/5BRORKnC2HD5xhgUyR31SH?si=Ony6s0iMSj6p8ztfILiLow">Boygenius</a>. </p>
 
+      <div class="container gallery-container">
 
+          <div class="tz-gallery grid ">
 
-    <div class="grid">
+                  <div class="cell">
+                          <a class="lightbox" href="images/vinyl/keroall.jpg">
+                          <img src="images/vinyl/keroall.jpg" class="card-img-top">
+                          </a>
+                  </div>
+                  <div class="cell">
+                          <a class="lightbox" href="images/vinyl/kerofront.jpg">
+                          <img src="images/vinyl/kerofront.jpg" class="card-img-top">
+                          </a>
+                  </div>
+
+                  <div class="cell">
+                      <a class="lightbox " href="images/vinyl/keroback.jpg">
+                      <img src="images/vinyl/keroback.jpg" class="card-img-top">
+                      </a>
+                  </div>
+                  <div class="cell">
+                      <a class="lightbox " href="images/vinyl/keroback-05.jpg">
+                      <img src="images/vinyl/keroback-05.jpg" class="card-img-top">
+                      </a>
+                  </div>
+                  <div class="cell">
+                      <a class="lightbox " href="images/vinyl/keroback-06.png">
+                      <img src="images/vinyl/keroback-06.png" class="card-img-top">
+                      </a>
+                  </div>
+                  <div class="cell">
+                      <a class="lightbox " href="images/vinyl/keroposter copy.jpg">
+                      <img src="images/vinyl/keroposter copy.jpg" class="card-img-top">
+                      </a>
+                  </div>
+                  <div class="cell">
+                      <a class="lightbox " href="images/vinyl/boygeniusback.jpg">
+                      <img src="images/vinyl/boygeniusback.jpg" class="card-img-top">
+                      </a>
+                  </div><div class="cell">
+                      <a class="lightbox " href="images/vinyl/boygeniusfront.jpg">
+                      <img src="images/vinyl/boygeniusfront.jpg" class="card-img-top">
+                      </a>
+                  </div>
+
+      </div>
+
+      </div> <!--end of gallery-->
+
+  <!--
         <div class="cell">
-           <img src="images/vinyl/keroall.jpg" alt="">
+           <img src="" alt="">
         </div>
         <div class="cell">
-           <img src="images/vinyl/kerofront.jpg" alt="">
+           <img src="" alt="">
         </div>
         <div class="cell">
-           <img src="images/vinyl/keroback.jpg" alt="">
+           <img src="" alt="">
         </div>
         <div class="cell">
-           <img src="images/vinyl/keroback-05.jpg" alt="">
+           <img src="" alt="">
         </div>
         <div class="cell">
-           <img src="images/vinyl/keroback-06.png" alt="">
+           <img src="" alt="">
         </div>
         <div class="cell">
-           <img src="images/vinyl/keroposter copy.jpg" alt="">
-        </div>
-        <div class="cell">
-           <img src="images/vinyl/boygeniusback.jpg" alt="">
+           <img src="" alt="">
         </div><div class="cell">
-           <img src="images/vinyl/boygeniusfront.jpg" alt="">
+           <img src="" alt="">
         </div>
-        </div>
-
+      </div>-->
 
 
       <div class="next">
-          <a href="idsa.html">next</a>
+          <a href="idsa">next</a>
       </div>
 
 
@@ -118,6 +162,12 @@
 
 
   </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+  baguetteBox.run('.tz-gallery');
+</script>
 
   <script>
 
@@ -143,5 +193,6 @@
 
 
 </script>
+
     </body>
 </html>
