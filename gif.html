@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive-grid.css">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -49,8 +50,8 @@
           <nav>
               <div class="list">
                   <ul>
-                    <li><a href="info.html"  class="nav">info</a>
-                    </li><li><a href="index.html"  class="nav">work</a>
+                    <li><a href="info"  class="nav">info</a>
+                    </li><li><a href="index"  class="nav">work</a>
                   </ul>
               </div> <!--end of nav-->
 
@@ -58,29 +59,75 @@
       </header>
 
         <p class="info">A collection of miscellaneous gifs</p>
+        <div class="container">
 
-              <div class="container">
+
+
+<div class="container gallery-container">
+
+    <div class="tz-gallery grid ">
+
+
+
+
+
+            <div class="cell">
+                    <a class="lightbox" href="images/gif/bigandsmall.gif">
+                    <img src="images/gif/bigandsmall.gif" class="card-img-top">
+                    </a>
+            </div>
+            <div class="cell">
+                    <a class="lightbox" href="images/gif/dhalfmoon.gif">
+                    <img src="images/gif/dhalfmoon.gif" class="card-img-top">
+                    </a>
+            </div>
+
+            <div class="cell">
+                <a class="lightbox " href="images/gif/lostdidactic.gif">
+                <img src="images/gif/lostdidactic.gif" class="card-img-top">
+                </a>
+            </div>
+            <div class="cell">
+                <a class="lightbox " href="images/house.gif">
+                <img src="images/house.gif" class="card-img-top">
+                </a>
+            </div>
+            <div class="cell">
+                <a class="lightbox " href="images/gif/abstract.gif">
+                <img src="images/gif/abstract.gif" class="card-img-top">
+                </a>
+            </div>
+
+
+
+
+</div>
+
+</div>
+
+            <!--  <div class="container">
+                 <div class="tz-gallery">
                   <div class="grid">
-                      <div class="cell gif">
-                      <img src="images//gif/bigandsmall.gif" alt="">
+                      <div class="cell card">
+                      <img  class="lightbox"src="images//gif/bigandsmall.gif" alt="">
                       </div>
-                      <div class="cell gif">
-                      <img src="images/gif/dhalfmoon.gif" alt="">
+                      <div class="cell card">
+                      <img class="lightbox"src="images/gif/dhalfmoon.gif" alt="">
                       </div>
-                      <div class="cell gif">
-                      <img src="images/house.gif" alt="">
+                      <div class="cell card">
+                      <img class="lightbox"src="images/house.gif" alt="">
                       </div>
-                      <div class="cell gif">
-                      <img src="images/gif/lostdidactic.gif" alt="">
+                      <div class="cell card">
+                      <img class="lightbox"src="images/gif/lostdidactic.gif" alt="">
                       </div>
-                      <div class="cell gif">
-                      <img src="images/gif/abstract.gif" alt="">
-                      </div>
-
-              </div>
+                      <div class="cell card">
+                      <img class="lightbox"src="images/gif/abstract.gif" alt="">
+                    </div>
+                  </div> end of tz-gallery
+              </div>-->
 
               <div class="next">
-                  <a href="riso.html">next</a>
+                  <a href="riso">next</a>
               </div>
 
 
@@ -92,6 +139,15 @@
         </footer>
       </div><!--end of footer-->
     </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
     <script>
 
     function myFunction(x) {
