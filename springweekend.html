@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive-grid.css">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet"
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Stephanie Wu</title>
@@ -49,8 +50,8 @@
           <nav>
               <div class="list">
                   <ul>
-                    <li><a href="info.html"  class="nav">info</a>
-                    </li><li><a href="index.html"  class="nav">work</a>
+                    <li><a href="info"  class="nav">info</a>
+                    </li><li><a href="index"  class="nav">work</a>
                   </ul>
               </div> <!--end of nav-->
 
@@ -58,25 +59,36 @@
       </header>
 
       <p class="info">I illustrated the cover for the <a href="http://post.browndailyherald.com/" target= "_blank">Brown Daily Herald post-</a>'s annual Spring Weekend edition. Layout, design, and photos by Nina Yuchi and Jacob Lee. View the full issue <a href="https://issuu.com/postmagazinebdh/docs/post-springweekend_v5_nosdw__edited" target="_blank">here.</a></p>
+      <div class="container gallery-container">
 
-      <div class="grid">
-        <div class="cell spring">
-           <img src="images/springweekend/4.jpg" alt="">
-        </div>
-        <div class="cell spring">
-           <img src="images/springweekend/5.jpg" alt="">
-        </div>
-        <div class="cell spring">
-           <img src="images/springweekend/1.png" alt="">
-        </div>
-        <div class="cell spring">
-           <img src="images/springweekend/2.png" alt="">
-        </div>
+          <div class="tz-gallery grid ">
+
+                  <div class="cell">
+                      <a class="lightbox " href="images/springweekend/4.jpg">
+                      <img src="images/springweekend/4.jpg" class="card-img-top">
+                      </a>
+                  </div>
+                  <div class="cell">
+                      <a class="lightbox " href="images/springweekend/5.jpg">
+                      <img src="images/springweekend/5.jpg" class="card-img-top">
+                      </a>
+                  </div>
+                  <div class="cell">
+                      <a class="lightbox " href="images/springweekend/1.png">
+                      <img src="images/springweekend/1.png" class="card-img-top">
+                      </a>
+                  </div><div class="cell">
+                      <a class="lightbox " href="images/springweekend/2.png">
+                      <img src="images/springweekend/2.png" class="card-img-top">
+                      </a>
+                  </div>
 
       </div>
 
+      </div> <!--end of gallery-->
+
       <div class="next">
-          <a href="smalltalk.html">next</a>
+          <a href="smalltalk">next</a>
       </div>
 
 
@@ -90,6 +102,10 @@
       </div><!--end of footer-->
       </div>
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+      baguetteBox.run('.tz-gallery');
+    </script>
 
         </div>
     </body>
