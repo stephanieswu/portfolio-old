@@ -96,7 +96,13 @@ a:hover{
 
 
 }
-      
+
+          .title-anime{
+            display: block;
+            margin: 0 auto;
+
+          }
+
 
       .responsive-image {
         width: 100%;
@@ -152,6 +158,10 @@ footer{
     color: navy;*/
 
   }
+
+          .title-anime{
+            padding: 1rem 3rem;
+          }
 
   .grid {
      display: flex;
@@ -209,6 +219,10 @@ footer{
   padding: 14rem 0 18rem 0 ;
   height: 10rem;
 
+}
+
+.title-anime{
+  padding: 3rem 0 1rem 0 ;
 }
 
     .grid {
