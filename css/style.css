@@ -2,10 +2,12 @@
 
 *, *:before, *:after {
   box-sizing: border-box;
+
 }
 
 body{
     font-family: 'Josefin Sans', sans-serif;
+    background-color: #fbfbfb
 
 }
 
@@ -100,7 +102,7 @@ a:hover{
           .title-anime{
             display: block;
             margin: 0 auto;
-
+            padding: 4rem 0 3rem 3rem ;
           }
 
 
@@ -222,7 +224,8 @@ footer{
 }
 
 .title-anime{
-  padding: 3rem 0 1rem 0 ;
+  width: 60%;
+  padding: 12rem 0 8rem 0 ;
 }
 
     .grid {
