@@ -7,10 +7,13 @@
 
 body{
     font-family: 'Josefin Sans', sans-serif;
+    background-color: #fbfbfb
+
+
 }
 
       .alert {
-        padding:.5rem;
+        padding:.3rem;
         background-color: #f44336;
         color: white;
         text-align: center;
@@ -68,15 +71,17 @@ a:hover{
 
       }
 
+      .name{
+        display: inline-block;
+        margin: 0;
+      }
+
       header ul{
         font-size: 1.5em;
-        list-style: none;
-        align-items: center;
-        display:inline-flex ;
-        margin:auto;
-        padding: 0;
-        position: sticky;
-        top: 0;
+       list-style: none;
+       display:inline-flex ;
+       margin:auto;
+       padding: 0;
 
       }
 
@@ -88,20 +93,18 @@ a:hover{
         padding: 0 10px;
       }
 
-.bigtitle{
-  visibility: hidden;
-  text-align: center;
-  font-size: .9em;
-  height: 1rem;
 
-
-}
 
           .title-anime{
             display: block;
             margin: 0 auto;
             padding: 7rem 0 6rem 3rem ;
           }
+
+                .info{
+                  margin: 0;
+                }
+
 
 
       .responsive-image {
@@ -148,16 +151,6 @@ footer{
   }
 
 
-  .bigtitle{
-    visibility: visible;
-    text-align: center;
-    font-size: .9em;
-    height: 5rem;
-    padding: 6rem 0 12rem 0 ;
-    /*text-shadow: 1px 1px tomato;
-    color: navy;*/
-
-  }
 
           .title-anime{
             padding: 6rem 0 8rem 4rem ;
@@ -187,10 +180,44 @@ footer{
 
 
 @media screen and (min-width:800px) {
-
   .wrapper{
-    max-width:1200px;
-    margin: 0 auto;
+      max-width:900px;
+
+    }
+
+    .title-anime{
+      width: 50%;
+      padding: 10rem 0 6rem 0 ;
+    }
+
+
+
+  nav{
+
+  }
+
+  header li{
+    display: inline;
+    font-size: 1em;
+    margin-top: 1rem;
+
+  }
+header ul{
+  float: right;
+  padding-right: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.info{
+  text-align: left;
+  margin-top: 5rem;
+}
+
+
+/*  .wrapper{
+    max-width:1000px;
+
   }
 
     nav{
@@ -211,20 +238,7 @@ footer{
     }
 
 
-.bigtitle{
-  visibility: visible;
-  font-size: .9em;
-  max-width: 700px;
-  margin:0 auto;
-  padding: 14rem 0 18rem 0 ;
-  height: 10rem;
 
-}
-
-.title-anime{
-  width: 60%;
-  padding: 12rem 0 8rem 0 ;
-}
 
     .grid {
        display: flex;
@@ -256,4 +270,4 @@ footer{
 
 
 
-}
+}*/
