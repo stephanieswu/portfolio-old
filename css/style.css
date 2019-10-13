@@ -12,7 +12,20 @@ body{
 
 }
 
+.wrapper{
+  max-width: 340px;
+  display: block;
+  margin: 0 auto;
+}
+
+  .home-wrapper{
+
+    display: block;
+    margin: 0 auto;
+  }
+/*ALERT ALERT ALERT ALERT*/
       .alert {
+        font-size: .8rem;
         padding:.3rem;
         background-color: #f44336;
         color: white;
@@ -32,23 +45,17 @@ body{
 
       .closebtn:hover {
         color: black;}
+
+/*ALERT ALERT ALERT ALERT*/
+
+
+
 img{
   width: 100%;
   height: auto;
   vertical-align: middle;
 }
 
-.nav {
-  text-decoration:none;
-  text-shadow: 1px 1px	tomato;
-  color: black;
-
-}
-
-.nav:hover{
-  color: lightblue;
-  opacity: .7;
-}
 
 a{
   text-decoration:none;
@@ -63,42 +70,75 @@ a:hover{
   color: black;
 
 }
+/*NAV NAV NAV NAV*/
+    header{
+      max-width: 340px;
+      display: block;
+      margin: 0 auto;
+    }
+    nav{
+    text-align: center;
+    padding-top: 1rem;
+    max-height: 4.5rem;
 
-
-      nav{
-        text-align: center;
-        padding: 2rem 0 0 0;
+    }
+      .nav1{
+        list-style: none;
+        font-size: 1.2rem;
+        text-align:left;
+        display: inline;
+        padding-right: 1.8rem;
 
       }
 
-      .name{
-        display: inline-block;
-        margin: 0;
+      .nav2{
+        list-style: none;
+        font-size: 1.2rem;
+        display: inline;
+        text-align: right;
+        padding-left: 1.8rem;
+        position: sticky;
       }
+        .nav-style{
+
+          color: black;
+          text-shadow: 1px 1px	tomato;
+        }
+        .nav-style:hover{
+          color: lightblue;
+          text-shadow: 1px 1px	tomato;
+        }
+        .nav {
+          text-decoration:none;
+          text-shadow: 1px 1px	tomato;
+          color: black;
+
+        }
+
+        .nav:hover{
+          color: lightblue;
+          opacity: .7;
+        }
+
+
 
       header ul{
-        font-size: 1.5em;
        list-style: none;
        display:inline-flex ;
-       margin:auto;
-       padding: 0;
+
 
       }
 
-      ul{
-
-      }
 
       header li {
         padding: 0 10px;
       }
 
-
-
+/*NAV NAV NAV NAV*/
           .title-anime{
             display: block;
             margin: 0 auto;
-            padding: 7rem 0 6rem 3rem ;
+            padding: 5rem 0 6rem 3rem ;
           }
 
                 .info{
@@ -112,10 +152,9 @@ a:hover{
       }
 
       .responsive-image:hover {
-        opacity: .9;
+        opacity: .5;
         cursor: pointer;
       }
-
 
       .cell{
         margin: 1rem;
@@ -128,6 +167,12 @@ a:hover{
 
       }
 
+            .project{
+              margin: 0 auto;
+              padding: 1rem 0;
+              width: 100%;
+            }
+
       .next{
         text-align: center;
         font-size: 1.5em;
@@ -135,7 +180,17 @@ a:hover{
 
       }
 
+/*INFO TEXT INFO TEXT*/
 
+.info{
+  text-align: left;
+  padding-top: 1rem;
+  max-width: 340px;
+  margin: 0 auto;
+
+}
+
+/*INFO TEXT INFO TEXT*/
 footer{
   text-align: center;
   font-size: .7rem;
@@ -144,19 +199,37 @@ footer{
   color: grey;
 }
 /***************IPAD**********************/
-@media screen and (min-width:600px){
+@media screen and (min-width:700px){
   .wrapper{
-    max-width: 700px;
+    max-width:500px;
     margin: 0 auto;
   }
 
+  .home-wrapper{
+    max-width:700px;
+  }
+    .title-anime{
+        width: 50%;
+      }
 
+          header{
+            max-width: 700px;
+          }
+
+          .nav1{
+              padding-right: 12rem;
+          }
+
+          .nav2{
+              padding-left: 12rem;
+          }
 
           .title-anime{
             padding: 6rem 0 8rem 4rem ;
           }
 
   .grid {
+
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
@@ -170,7 +243,10 @@ footer{
      visibility: visible;
      }
 
-
+     .info{
+       max-width: 500px;
+       margin: 0 auto;
+     }
 
 
 
@@ -181,93 +257,47 @@ footer{
 
 @media screen and (min-width:800px) {
   .wrapper{
-      max-width:900px;
+      max-width:500px;
 
     }
-
-    .title-anime{
-      width: 50%;
-      padding: 10rem 0 6rem 0 ;
-    }
-
-
-
-  nav{
-
-  }
-
-  header li{
-    display: inline;
-    font-size: 1em;
-    margin-top: 1rem;
-
-  }
-header ul{
-  float: right;
-  padding-right: 20px;
-  position: sticky;
-  top: 0;
-}
-
-.info{
-  text-align: left;
-  margin-top: 5rem;
-}
-
-
-/*  .wrapper{
-    max-width:1000px;
-
-  }
-
-    nav{
-
-    }
-      header li{
-        display: inline;
-        font-size: 1.3em;
-        margin-top: 1rem;
+    .home-wrapper{
+        max-width:900px;
 
       }
-    header ul{
-      float: right;
-      padding-right: 20px;
-      padding-top: 10px;
-      position: sticky;
-      top: 0;
+
+    .title-anime{
+      width: 40%;
+      padding: 8rem 0 10rem 0 ;
     }
 
 
 
+.grid{
+  margin-top: 0;
+}
 
-    .grid {
-       display: flex;
-       flex-wrap: wrap;
-       flex-direction: row;
-
-
-     }
-     .cell {
-       width: calc(50% - 2rem);
-     }
-
-     .responsive-image:hover{
-       opacity: .5;
-
-     }
-
-      img:hover .tooltip{
-       visibility: visible;
-       }
-
-
-
-
-
-footer{
-  text-align: center;
+.project{
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 100%;
 }
 
 
 
-}*/
+.info{
+    padding: 2rem 0;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+header{
+  max-width: 900px;
+}
+.nav1{
+    padding-right: 18.5rem;
+}
+
+.nav2{
+    padding-left: 18.5rem;
+}
