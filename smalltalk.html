@@ -4,88 +4,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/css/project.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive-grid.css">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Stephanie Wu</title>
 
-    <style media="screen">
-    .info{
-      text-align: left;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
 
-    .pic{
-      width: 80%;
-      margin: 0 auto;
-    }
-
-
-
-
-    @media screen and (min-width:600px){
-      .wrapper{
-        max-width: 900px;
-      }
-
-      .info{
-        text-align: left;
-        margin-top: 5rem;
-      }
-      .pic{
-        width: 50%;
-        padding:1rem;
-      }
-
-
-
-
-    }
-
-    </style>
     </head>
 
     <body>
-        <div class="wrapper">
-
-
       <header>
           <nav>
-              <div class="list">
+            <div class="nav1">
+                <a href="index" class="nav-style">Stephanie Wu</a>
+            </div>
+              <div class="nav2">
                   <ul>
-                    <li><a href="info"  class="nav">info</a>
-                    </li><li><a href="index"  class="nav">work</a>
+                    <li><a href="info" class="nav-style">info</a>
+                    </li><li><a href="index"class="nav-style">work</a>
                   </ul>
-              </div> <!--end of nav-->
+              </div>
+        </nav>
+        </header>
+        <div class="wrapper">
 
-          <nav>
-      </header>
-
-      <p class="info">My experiences from sophomore year of college inspired <strong>Small Talk</strong>, an interactive narrative following the daily life of a lonely dot. This project explores a question I was really trying to figure out myself, how do you break past small talk and make a genuine connection? <strong>Small Talk</strong> was created during Wintersession 2019 in a month.<br><br>View the live site <a href="https://stephanieswu.github.io/smalltalk/index.html" target= "_blank">here</a></p>
+      <p class="info">My experiences from sophomore year of college inspired <strong>Small Talk</strong>, an interactive narrative following the daily life of a lonely dot. This project explores a question I was really trying to figure out myself, how do you break past small talk and make a genuine connection? <strong>Small Talk</strong> was created during Wintersession 2019 in a month.<br><br>View the live site <a href="https://stephanieswu.github.io/smalltalk/index" target= "_blank">here</a></p>
 
 
+            <div class="container gallery-container">
+              <div class="tz-gallery">
+                <div class="cell project">
+                    <a class="lightbox " href="images/smalltalk/pic.png">
+                    <img src="images/smalltalk/pic.png" class="card-img-top">
+                    </a>
+                </div>
+                <div class="cell project">
+                    <a class="lightbox " href="images/smalltalk/pic2.png">
+                    <img src="images/smalltalk/pic2.png" class="card-img-top">
+                    </a>
+                </div>
+              </div>
+              </div>
 
-    <div class="grid">
-        <div class="cell">
-           <img src="images/smalltalk/pic.png" alt="">
+
+        <div class="next">
+            <a href="springweekend"><</a>
+            <a href="idsa">></a>
+
         </div>
-        <div class="cell">
-           <img src="images/smalltalk/pic2.png" alt="">
-        </div>
-        </div>
-
-
-
-      <div class="next">
-          <a href="idsa">next</a>
-      </div>
-
-
 
       <div class="section group">
         <footer>
@@ -96,7 +65,10 @@
       </div><!--end of footer-->
       </div>
 
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+      baguetteBox.run('.tz-gallery');
+    </script>
         </div>
     </body>
 </html>

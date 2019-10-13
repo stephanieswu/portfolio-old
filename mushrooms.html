@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive-grid.css">
 
-<link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
     <title>Stephanie Wu</title>
 
     <style media="screen">
@@ -18,27 +23,33 @@
           .video{
             width: 100%;
             height: 375px;
-            padding: 0 1rem;
             margin: 0 auto;
 
           }
 
 
           .info{
-            padding: 0 1rem;
-            margin: 0;
+            padding-top: 0;
           }
 
-          @media screen and (min-width:600px){
+          @media screen and (min-width:700px){
               .video{
-                height: 500px;
-                padding-top: 1rem;
+                height:520px;
+                margin: 0 auto;
+
+
               }
 
-              .info{
-                text-align: left;
-                margin-top: 5rem;
+
+
+            @media screen and (min-width:800px){
+
+              .video{
+                height: 605px;
               }
+
+
+            }
 
 
           }
@@ -46,39 +57,46 @@
     </head>
 
     <body>
-        <div class="wrapper">
-
 
       <header>
           <nav>
-              <div class="list">
+            <div class="nav1">
+                <a href="index" class="nav-style">Stephanie Wu</a>
+            </div>
+              <div class="nav2">
                   <ul>
-                    <li><a href="info"  class="nav">info</a>
-                    </li><li><a href="index"  class="nav">work</a>
+                    <li><a href="info" class="nav-style">info</a>
+                    </li><li><a href="index"class="nav-style">work</a>
                   </ul>
-              </div> <!--end of nav-->
+              </div>
+        </nav><!--end of nav-->
+    </header>
 
-          <nav>
-      </header>
+<div class="wrapper">
 
-      <p class="info">Under the prompt of interpreting two Mary Oliver poems, <a href="http://famouspoetsandpoems.com/poets/mary_oliver/poems/15867" target = "_blank">Mushrooms</a> and <a href="https://charlottehutson.wordpress.com/2011/10/29/rice-a-poem-by-mary-oliver/" target ="_blank">Rice</a>, I wanted to create a moving poem focused on specific moments. Themes of slow growth and quietude are at the root of the poems. This animation was inspired by this <a href="https://vimeo.com/218528943" target="_blank">short film. </a></p>
+
+      <div class="info">
+      <p>Under the prompt of interpreting two Mary Oliver poems, <a href="http://famouspoetsandpoems.com/poets/mary_oliver/poems/15867" target = "_blank">Mushrooms</a> and <a href="https://charlottehutson.wordpress.com/2011/10/29/rice-a-poem-by-mary-oliver/" target ="_blank">Rice</a>, I wanted to create a moving poem focused on specific moments This animation was inspired by this <a href="https://vimeo.com/218528943" target="_blank">short film. </a></p>
+
+      </div>
 
 
   <iframe class="video"src="https://player.vimeo.com/video/330706169" width="500" height="500" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
 <div class="container gallery-container">
 
-    <div class="tz-gallery grid ">
 
-            <div class="cell">
+  <div class="tz-gallery">
+            <div class="cell project">
                 <a class="lightbox " href="images/tree.gif">
                 <img src="images/tree.gif" class="card-img-top">
                 </a>
             </div>
-            <div class="cell">
+            <div class="cell project">
                 <a class="lightbox " href="images/sun.gif">
                 <img src="images/sun.gif" class="card-img-top">
                 </a>
-            </div>
+  </div>
+
 
 </div>
 
@@ -88,7 +106,9 @@
 
 
       <div class="next">
-          <a href="idsa">next</a>
+          <a href="riso"><</a>
+          <a href="springweekend">></a>
+
       </div>
 
 
@@ -101,6 +121,7 @@
         </footer>
       </div><!--end of footer-->
       </div>
+      </div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>
@@ -109,138 +130,6 @@
 
 
         </div>
+
     </body>
 </html>
-
-
-<!--<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/css/project.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/responsive-grid.css">
-
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <title>Stephanie Wu</title>
-
-    <style media="screen">
-
-
-      .video{
-        width: 100%;
-        height: 375px;
-        padding: 0 1rem;
-        margin: 0 auto;
-
-      }
-      .video-info{
-        text-align: left;
-        margin: 0 auto;
-        padding: 0 1rem;
-      }
-
-      .mushrooms{
-        height: 100%;
-
-      }
-
-      .label{
-        font-size: .7em;
-        text-align: left;
-        align-items: center;
-        padding-left: 2rem;
-      }
-
-
-
-
-      @media screen and (min-width:600px){
-          .video{
-            height: 500px;
-            margin-top: 50px;
-          }
-
-          .video-info{
-            width: 600px;
-            margin: 0 auto;
-            padding: 5rem 3rem 0 3rem;
-          }
-          .label{
-            padding-left: 12.4rem;
-
-          }
-
-          .wrapper{
-            max-width: 900px;
-          }
-
-
-
-
-      }
-
-    </style>
-
-  </head>
-  <body>
-  <div class="wrapper">
-
-
-    <header>
-        <nav>
-            <div class="list">
-                <ul>
-                  <li><a href="info"  class="nav">info</a>
-                  </li><li><a href="index"  class="nav">work</a>
-                </ul>
-            </div>
-
-        <nav>
-    </header>
-
-      <div class="video-container">
-        <p class="video-info">Under the prompt of interpreting two Mary Oliver poems, <a href="http://famouspoetsandpoems.com/poets/mary_oliver/poems/15867" target = "_blank">Mushrooms</a> and <a href="https://charlottehutson.wordpress.com/2011/10/29/rice-a-poem-by-mary-oliver/" target ="_blank">Rice</a>, I choose to create an animation focused on specific moments within the poems.
-        This animation was inspired by this <a href="https://vimeo.com/218528943" target="_blank">short film</a>
-
-      </p>
-
-
-
-        <iframe class="video"src="https://player.vimeo.com/video/330706169" width="500" height="500" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
-
-
-      </div>
-
-      <div class="grid">
-        <div class="cell mushrooms">
-           <img src="images/tree.gif" alt="">
-        </div>
-        <div class="cell mushrooms">
-           <img src="images/sun.gif" alt="">
-        </div>
-
-      </div>
-
-
-  </div>
-  <div class="next">
-    <a href="springweekend">next</a>
-  </div>
-  <div class="section group">
-    <footer>
-      <div class="col span_12_of_12">
-        © 2019 Stephanie Wu
-      </div>
-    </footer>
-  </div>
-  </div>
-
-
-
-    </body>
-  </head> -->
