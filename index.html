@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive-grid.css">
 
-
-
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
@@ -22,26 +21,28 @@
       <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
       Website is currently under construction!
     </div>
-  <div class="wrapper">
+  <div class="home-wrapper">
 
 
       <header>
           <nav>
-
-              <div class="list">
+            <div class="nav1">
+                <a href="index" class="nav-style">Stephanie Wu</a>
+            </div>
+              <div class="nav2">
                   <ul>
-                    <li><a href="info" class="nav">info</a>
-                    </li><li><a href="index"class="nav">work</a>
+                    <li><a href="info" class="nav-style">info</a>
+                    </li><li><a href="index"class="nav-style">work</a>
                   </ul>
-              </div> <!--end of nav-->
-
+              </div>
+        </nav><!--end of nav-->
 
               <div class="title-anime">
 
 
                 <img src="bigtitle3.gif" alt="">
                       <!--<h1>Stephanie Wu is an illustrator and designer studying at Rhode Island School of Design</h1>-->
-              <nav><!--end of bigtitle-->
+              <!--end of bigtitle-->
                 </div>
     </header>
 
@@ -79,7 +80,8 @@
             </div>
 
         </div>
-    </div>
+
+      </div>
 
 
     <div class="section group">
@@ -89,12 +91,12 @@
         </div>
       </footer>
     </div><!--end of footer-->
-  </div>
+
 
   <script>
 
   function myFunction(x) {
-    if (x.matches) { // If media query matches
+    if (x.matches) {
       $()
 
     } else {
@@ -108,8 +110,8 @@
   }
 
   var x = window.matchMedia("(max-width: 800px)")
-  myFunction(x) // Call listener function at run time
-  x.addListener(myFunction) // Attach listener function on state change
+  myFunction(x)
+  x.addListener(myFunction)
 
 
 
