@@ -72,9 +72,14 @@ a:hover{
 }
 /*NAV NAV NAV NAV*/
     header{
+      background:#fbfbfb;
       max-width: 340px;
       display: block;
       margin: 0 auto;
+      position: sticky;
+      top:0;
+      z-index: 9999;
+
     }
     nav{
     text-align: center;
@@ -88,6 +93,8 @@ a:hover{
         text-align:left;
         display: inline;
         padding-right: 1.8rem;
+
+
 
       }
 
@@ -131,7 +138,7 @@ a:hover{
 
 
       header li {
-        padding: 0 10px;
+        padding: 0  0  0 10px;
       }
 
 /*NAV NAV NAV NAV*/
@@ -154,6 +161,10 @@ a:hover{
       .responsive-image:hover {
         opacity: .5;
         cursor: pointer;
+      }
+
+      .container{
+        position: relative;
       }
 
       .cell{
@@ -233,6 +244,7 @@ footer{
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
+
    }
    .cell {
      width: calc(50% - 2rem);
@@ -274,6 +286,8 @@ footer{
 
 .grid{
   margin-top: 0;
+
+
 }
 
 .project{
@@ -293,11 +307,50 @@ footer{
 
 header{
   max-width: 900px;
+  background:none;
+
+
 }
 .nav1{
-    padding-right: 18.5rem;
+
+    padding-right: 19rem;
 }
 
 .nav2{
-    padding-left: 18.5rem;
+  width: 400px;
+    padding-left: 18.75rem;
 }
+
+
+/***************big DESKTOP**********************/
+
+
+@media screen and (min-width:1400px) {
+  .wrapper{
+      max-width:700px;
+
+    }
+    .home-wrapper{
+        max-width:1200px;
+
+      }
+
+      .info{
+        max-width: 700px;
+      }
+
+      header{
+        max-width: 1200px;
+        background:none;
+
+
+      }
+      .nav1{
+
+          padding-right: 30rem;
+      }
+
+      .nav2{
+        width: 400px;
+          padding-left: 25rem;
+      }
