@@ -73,7 +73,7 @@ a:hover{
 /*NAV NAV NAV NAV*/
     header{
       background:#fbfbfb;
-      max-width: 340px;
+      max-width: 400px;
       display: block;
       margin: 0 auto;
       position: sticky;
@@ -92,7 +92,7 @@ a:hover{
         font-size: 1.2rem;
         text-align:left;
         display: inline;
-        padding-right: 1.8rem;
+        padding-right: 2.6rem;
 
 
 
@@ -103,7 +103,7 @@ a:hover{
         font-size: 1.2rem;
         display: inline;
         text-align: right;
-        padding-left: 1.8rem;
+        padding-left: 2.6rem;
         position: sticky;
       }
         .nav-style{
