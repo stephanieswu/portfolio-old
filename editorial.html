@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/responsive-grid.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <title>Stephanie Wu</title>
+<style media="screen">
+
+  }
+</style>
+
+
+  </head>
+  <body>
+
+    <header>
+        <nav>
+          <div class="nav1">
+              <a href="index.html" class="nav-style">Stephanie Wu</a>
+          </div>
+            <div class="nav2">
+                <ul>
+                  <li><a href="info.html" class="nav-style">info</a>
+                  </li><li><a href="index.html"class="nav-style">work</a>
+                </ul>
+            </div>
+      </nav>
+      </header>
+
+  <div class="wrapper">
+
+
+        <p class="info">Editorial illustrations for <a href="http://post.browndailyherald.com/" target="_blank">Brown Daily Herald post-</a> and <a href="https://www.theindy.org/" target="_blank">The College Hill Independent</a></p>
+        <div class="container gallery-container">
+
+
+                    <div class="cell project">
+                        <a class="lightbox " href="images/editorial/wowairandnasa.jpg">
+                        <img src="images/editorial/wowairandnasa.jpg" class="card-img-top">
+                        </a>
+                    </div>
+                    <div class="tz-gallery grid ">
+                            <div class="cell project">
+                                <a class="lightbox " href="images/editorial/shiru.jpg">
+                                <img src="images/editorial/shiru.jpg" class="card-img-top">
+                                </a>
+                            </div>
+                    <div class="cell project">
+                        <a class="lightbox " href="images/editorial/boba.jpg">
+                        <img src="images/editorial/boba.jpg" class="card-img-top">
+                        </a>
+                    </div>
+                    <div class="cell project">
+                        <a class="lightbox " href="images/editorial/cra_illus.jpg">
+                        <img src="images/editorial/cra_illus.jpg" class="card-img-top">
+                        </a>
+                    </div>
+                    <div class="cell project">
+                        <a class="lightbox " href="images/editorial/dimsum.jpg">
+                        <img src="images/editorial/dimsum.jpg" class="card-img-top">
+                        </a>
+                    </div>
+
+                    <div class="cell project">
+                        <a class="lightbox " href="images/editorial/sunandmoon.jpg">
+                        <img src="images/editorial/sunandmoon.jpg" class="card-img-top">
+                        </a>
+                    </div>
+        </div>
+
+        </div> <!--end of gallery-->
+
+
+        <div class="next">
+            <a href="gif.html"><</a>
+            <a href="mushrooms.html">></a>
+
+        </div>
+
+      <div class="section group">
+        <footer>
+          <div class="col span_12_of_12">
+            © 2019 Stephanie Wu
+          </div>
+        </footer>
+      </div><!--end of footer-->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run('.tz-gallery');
+  </script>
+
+    <script>
+
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+        $()
+
+      } else {
+        $(".grid").imagesLoaded(function() {
+            $(".grid").masonry({
+              itemSelector: ".cell"
+            });
+          });
+
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 800px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state change
+
+
+
+
+  </script>
+
+    </body>
+  </html>
