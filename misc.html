@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/responsive-grid.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <title>Stephanie Wu</title>
+
+  </head>
+  <style media="screen">
+    body{
+      background-color: white;
+    }
+  </style>
+  <body>
+
+    <header>
+        <nav>
+          <div class="nav1">
+              <a href="index" class="nav-style">Stephanie Wu</a>
+          </div>
+            <div class="nav2">
+                <ul>
+                  <li><a href="info" class="nav-style">info</a>
+                  </li><li><a href="index"class="nav-style">work</a>
+                </ul>
+            </div>
+      </nav>
+      </header>
+  <div class="wrapper">
+
+        <p class="info">Miscellanous illustrations and paintings created within 2019</p>
+        <div class="container">
+
+
+
+<div class="container gallery-container">
+
+    <div class="tz-gallery grid ">
+
+
+
+            <div class="cell project">
+                    <a class="lightbox" href="images/misc/jake.JPG">
+                    <img src="images/misc/jake.JPG"class="card-img-top">
+                    </a>
+            </div>
+
+                        <div class="cell project">
+                                <a class="lightbox" href="images/misc/breakup.JPG">
+                                <img src="images/misc/breakup.JPG" class="card-img-top">
+                                </a>
+                        </div>
+
+            <div class="cell project">
+                    <a class="lightbox" href="images/misc/scout.JPG">
+                    <img src="images/misc/scout.JPG" class="card-img-top">
+                    </a>
+            </div>
+
+            <div class="cell project">
+                    <a class="lightbox" href="images/misc/figure1.JPG">
+                    <img src="images/misc/figure1.JPG" class="card-img-top">
+                    </a>
+            </div>
+
+            <div class="cell project">
+                    <a class="lightbox" href="images/misc/cult.JPG">
+                    <img src="images/misc/cult.JPG" class="card-img-top">
+                    </a>
+            </div>
+
+
+</div>
+
+
+</div> <!--end of gallery-->
+
+          <div class="next">
+              <a href="kero"><</a>
+              <a href="riso">></a>
+
+          </div>
+
+
+      <div class="section group">
+        <footer>
+          <div class="col span_12_of_12">
+            © 2019 Stephanie Wu
+          </div>
+        </footer>
+      </div><!--end of footer-->
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
+    <script>
+
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+        $()
+
+      } else {
+        $(".grid").imagesLoaded(function() {
+            $(".grid").masonry({
+              itemSelector: ".cell"
+            });
+          });
+
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 800px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state change
+
+
+
+
+  </script>
+    </body>
+  </html>
