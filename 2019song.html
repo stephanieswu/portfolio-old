@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/responsive-grid.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <title>Stephanie Wu</title>
+
+
+
+  </head>
+  <body>
+
+    <header>
+        <nav>
+          <div class="nav1">
+              <a href="index" class="nav-style">Stephanie Wu</a>
+          </div>
+            <div class="nav2">
+                <ul>
+                  <li><a href="info" class="nav-style">info</a>
+                  </li><li><a href="index"class="nav-style">work</a>
+                </ul>
+            </div>
+      </nav>
+      </header>
+
+  <div class="wrapper">
+
+
+        <p class="info"><strong>2019 20-21</strong> is a book containing lyrics and illustrations of eight songs that have greatly impacted my life through 2019. The book is a combination of letterpress printing and risograph printing on a variety of handmade paper and bound with coptic stitching.</p>
+        <div class="container gallery-container">
+
+          <div class="tz-gallery grid ">
+                  <div class="cell project">
+                      <a class="lightbox " href="images/2019song/1.jpg">
+                      <img src="images/2019song/1.jpg" class="card-img-top">
+                      </a>
+                  </div>
+
+                  <div class="cell project">
+                      <a class="lightbox " href="images/2019song/2.jpg">
+                      <img src="images/2019song/2.jpg" class="card-img-top">
+                      </a>
+                  </div>
+
+                <div class="cell project">
+                    <a class="lightbox " href="images/2019song/3.jpg">
+                    <img src="images/2019song/3.jpg" class="card-img-top">
+                    </a>
+                </div>
+
+                    <div class="cell project">
+                        <a class="lightbox " href="images/2019song/4.jpg">
+                        <img src="images/2019song/4.jpg" class="card-img-top">
+                        </a>
+                    </div>
+
+                  <div class="cell project">
+                      <a class="lightbox " href="images/2019song/5.jpg">
+                      <img src="images/2019song/5.jpg" class="card-img-top">
+                      </a>
+                  </div>
+
+                  <div class="cell project">
+                      <a class="lightbox " href="images/2019song/6.jpg">
+                      <img src="images/2019song/6.jpg" class="card-img-top">
+                      </a>
+                  </div>
+
+                <!--<div class="cell project">
+                    <a class="lightbox " href="images/2019song/7.jpg">
+                    <img src="images/2019song/7.jpg" class="card-img-top">
+                    </a>
+                </div>-->
+
+                <div class="cell project">
+                    <a class="lightbox " href="images/2019song/8.jpg">
+                    <img src="images/2019song/8.jpg" class="card-img-top">
+                    </a>
+                </div>
+
+            <!--    <div class="cell project">
+                    <a class="lightbox " href="images/2019song/9.jpg">
+                    <img src="images/2019song/9.jpg" class="card-img-top">
+                    </a>
+                </div>-->
+
+              <div class="cell project">
+                  <a class="lightbox " href="images/2019song/10.jpg">
+                  <img src="images/2019song/10.jpg" class="card-img-top">
+                  </a>
+              </div>
+
+
+
+                    <div class="cell project">
+                        <a class="lightbox " href="images/2019song/flip.gif">
+                        <img src="images/2019song/flip.gif" class="card-img-top">
+                        </a>
+                    </div>
+
+
+
+
+  </div>
+
+  </div> <!--end of gallery-->
+
+
+        <div class="next">
+            <a href="todo"><</a>
+            <a href="idsa">></a>
+
+        </div>
+
+      <div class="section group">
+        <footer>
+          <div class="col span_12_of_12">
+            © 2019 Stephanie Wu
+          </div>
+        </footer>
+      </div><!--end of footer-->
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run('.tz-gallery');
+  </script>
+
+    <script>
+
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+        $()
+
+      } else {
+        $(".grid").imagesLoaded(function() {
+            $(".grid").masonry({
+              itemSelector: ".cell"
+            });
+          });
+
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 800px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state change
+
+
+
+
+  </script>
+
+    </body>
+  </html>
